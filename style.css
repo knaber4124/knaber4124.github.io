@@ -1,200 +1,133 @@
 body{
-    background-color:black;
-
- }
-
- h1{
-  font-size:30px;
-
- }
-
- h2{
-    font-size:25px;
-
- }
-
-
-
-#header{
-    height:100px;
-    background-color: rgb(43, 53, 54);
-    color: #66FCF1;
-    text-align: right;
-
+    background-size: cover;
+    background-repeat:no-repeat; 
+    background-image: url(./images/code.jpg); 
 }
-
-#header #name{
+ h1{
     position:relative;
-    top:20px;
+    top:5px;
     left:15px;
     text-align:left;
     border: solid;
     border-color: grey;
     border-radius:10px;
-    padding-left:25px;
-    width:200px;
+    padding-left:20px;
+    width:260px;
     background-color:#1F3833;
-     color:#66FCF1
+    color:white;
     margin-top:25px;
     vertical-align: middle;
-
-
+}      
+form{
+    padding-top:10px;
 }
-#container{
+.linkedLogo{
+    height : 40px;
+    width: 30px;
+    position: relative;
+    left: 10px;
+    bottom:10px;
+    
+}
+.gitLogo{
+    height:60px;
+    width:95px;
+    position: relative;
+    bottom:20px;
+}
+#headshot{
+    padding-top:15px;
+}
 
-    background-color:white;
+.container{
+    color: white;
     width:960px;
     margin-left:auto;
     margin-right:auto;
-
-
+}
+.nav{
+     position:relative;
+     top:50px;
+     margin-bottom: 50px;
+     color:black;
 }
 
-#content{
-    padding: 25px;
-
-}
-
-#nav{
-    
-    text-align: right;
-    color:white;
-    margin-bottom:25px;
-
-
-
-
-}
-
-
-#main{
-    
-    
-
-    
-
-}
-
-#footer{
+.footer{
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:grey;
+    background-color: grey;
     color: white;
     text-align: center;
-  }
-
-#headshot{
-    float:left;
-
-
+}
+.nav-link{
+    color:black;
+}
+.nav-link:hover{
+    color:white;
+}
+.copyright{
+    color:white;
+}
+.text-center{
+    position:fixed;    
+    bottom:0;
+}
+.indexText{
+    background: 	rgba(128,128,128,.8);
 }
 
-#hangman{
-    width:200px;
-    height:200px;
-    float: left;
-}
-#rpg{
-    width:200px;
-    height:200px;
-    float:right;
-}
-#trivia{
-    width:200px;
-    height:200px;
-    float:left;
-}
-#rutgers{
-    width:200px;
-    height:200px;
-    float:right;
-}
-#rockpaperscissors{
-    width:200px;
-    height:200px;
-    float:left;
-}
-
-
-
-.copyright {
-    text-align:center;
-
-}
-
-
-.grid-container {
-
-    display: grid;
-  
-    grid-template-columns: auto auto;
-  
-    
-  
-    padding: 10px;
-  
-  }
-  
-  .grid-item {
-  
-    background-color: rgba;
-        
-    padding: 20px;
-  
-    font-size: 30px;
-  
-    text-align: center;
-  
-  }
-
-  .bottom-right {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-  }
-
-  .grid-item p{
+.label{
+    background-color:#1F3833;
+    color:white;
     position:relative;
-    top:-100px;
-    left:50px;
-    background-color:teal;
-    float:left;
-    width:33%;
-    z-index:2;
-    text-size-adjust: 25%;
+    bottom:30px;
+}
+.portfolioHeader{
+    text-align: center;
+}
+.description{
+    color:white;
+}
+.name{
+    text-align: center;
+}
+.modal-header{
+    background-color:#1F3833;
+    color:white;
+}
+.modal-footer{
+    background-color:#1F3833;
+    color:white;
+}
+.modal-button{
+    background-color: white;
+    color:black;
+}
+.portInfo{
+    margin-bottom:10px;
+}
 
+.portImage{
+    height: 250px;
+    width:300px; 
+}
 
-  }
+.gitLabel{
+    color:black;
+}
+.gitLabel:hover{
+    color:white;
+}
 
-  .grid-item h4{
+@media only screen and (max-width: 765px){
+    .nav-item{
+        position:relative;
+        bottom: 50px;
+    }
+    .label{
+        width:250px;
+    }
 
-    width:33%;
-    float:left;
-
-
-  }
-  .grid-item a{
-    color: black;
-    text-decoration:none;
-
-  }
-  
-
-  <div class="contact">
-    align:center;
-  <form action="action_page.php">
-
-    <label for="name">First Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name..">
-
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-
+}
